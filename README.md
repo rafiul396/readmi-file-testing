@@ -29,7 +29,8 @@ When you call the update function, React changes the state and automatically re-
 
 **Ans:** Here is an example:
 
-```function Parent() {
+```
+function Parent() {
   const [count, setCount] = useState(0);
   return (
     <>
@@ -37,6 +38,7 @@ When you call the update function, React changes the state and automatically re-
     </>
   );
 }
+```
 Here, the state is declared using useState. The count holds the value 0 initially, and setCount is a function to update that state. Then, count and setCount are passed as props to the <Countercompo /> component. Inside <Countercompo />, these props can be received using destructuring.This way, the state of one component can be shared with another component and also used or updated there.
 
 ## 5. How is event handling done in React?
@@ -44,7 +46,8 @@ Here, the state is declared using useState. The count holds the value 0 initiall
 
 Example:
 
-```function Button() {
+```
+function Button() {
   function handleClick() {
     alert("Button clicked!");
   }
@@ -55,6 +58,7 @@ Example:
     </button>
   );
 }
+```
 
 
 In this Button component, I created a button and set a click event on it. Then I declared a function named handleClick. Inside this function, I set an alert. When someone clicks the button, the alert will be shown.
